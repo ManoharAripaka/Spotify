@@ -1,0 +1,106 @@
+.footer{
+    position: fixed;
+    bottom: 0;
+    color: white;
+    height: 88px;
+    background-color: rgb(27, 27, 27);
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1.2fr 1fr;
+}
+.footer_left{
+    display: flex;
+    padding: 17px 20px;
+}
+.footer_left img{
+    width: 55px;
+    height: 55px;
+}
+.text{
+    padding-left: 15px;
+    display: grid;
+    white-space: nowrap ;
+    overflow: hidden ;
+    text-overflow: ellipsis ;
+}
+.onee{
+    font-size: 14px;
+    color: white;
+    margin-top: 20px;
+    white-space: nowrap ;
+    overflow: hidden ;
+    text-overflow: ellipsis ;
+}
+.two{
+    margin-top: -20px;
+    font-size: 11.5px;
+    white-space: nowrap ;
+    overflow: hidden ;
+    text-overflow: ellipsis ;
+}
+.icon{
+    padding-left: 17px;
+    padding-top: 15px;
+}
+.control{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgb(151, 149, 149);
+    padding-top: 10px;
+}
+.shuffle, .repeat{
+    padding: 10px;
+}
+.prev, .next{
+    padding: 5px;
+    font-size: 35px !important;
+}
+.shuffle:hover, .prev:hover, .next:hover, .repeat:hover{
+    color: white;
+}
+.play1{
+    font-size: 40px !important;
+    color: white;
+    padding-top: 2px;
+    transition: transform 100ms ease-in-out;
+}
+.play1:hover{
+    transform: scale(1.1);
+}
+.sliderbar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: -15px;
+}
+.sliderbar p{
+    padding: 0px 15px;
+    font-size: 13px;
+    color: rgb(151, 149, 149);
+}
+.footer_right{
+    display: flex;
+    width: 160px;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+}
+.slide{
+    margin-left: 20px;
+    scroll-behavior: smooth;
+}
+@media (max-width: 680px){
+    .footer_right{
+        display: none;
+    }
+    .footer{
+        grid-template-columns: 1fr 1fr;
+    }
+    .shuffle, .repeat{
+        font-size: 20px !important;
+    }
+    .prev, .next{
+        font-size: 27px !important;
+    }
+}

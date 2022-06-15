@@ -1,0 +1,202 @@
+.display{
+    margin: 0;
+}
+.display_header {
+    display: flex;
+    height: 340px;
+    width: auto;
+}
+.body_bottom{
+    background-image: linear-gradient(o bottom right, #1f1f3f77, black);
+}
+.display_header .image {
+    align-self: flex-end;
+    justify-content: left;
+    width: 235px;
+    height: 230px;
+    padding-bottom: 22px;
+    padding-left: 32px;
+    object-fit: cover;
+}
+.display_header .text {
+    display: flex;
+    flex-direction: column;
+    color: white;
+    align-self: flex-end;
+    padding-left: 25px;
+}
+.display_header .text .list {
+    font-size: 11px;
+    font-weight: 1000;
+}
+.display_header .text .title {
+    font-size: 90px;
+    font-weight: bolder;
+    letter-spacing: -6px;
+    margin-bottom: -10px;
+    margin-top: -10px;
+}
+.bottom {
+    display: flex;
+    align-items: center !important;
+    padding-bottom: 12px;
+    margin-bottom: 10px;
+}
+.bottom img {
+    height: 25px;
+    width: 25px;
+    border-radius: 50px;
+    object-fit: cover;
+}
+.bottom .one {
+    font-size: 14px;
+    font-weight: 900;
+    padding-left: 5px;
+    letter-spacing: 0px;
+}
+.bottom .twoo {
+    padding-left: 18px;
+    font-size: 13px;
+    font-weight: 600;
+}
+ul {
+    list-style: none;
+    display: flex;
+}
+ul li::before {
+    content: "\2022";
+    color: white;
+    display: inline-block;
+    width: 0.7em;
+    margin-left: -1em;
+    font-size: 13px;
+}
+.play {
+    font-size: 67px !important;
+    margin-left: 25px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    color: #0dc74e;
+}
+.play:hover {
+    transition: 100ms transform ease-in;
+    transform: scale(1.07);
+    cursor: pointer;
+}
+@media (max-width: 1284px) {
+    .display_header .image {
+        width: 195px;
+        height: 190px;
+        object-fit: cover;
+    }
+}
+@media (max-width: 1113px) {
+    .display_header .text .title {
+        font-size: 65px;
+        font-weight: 1000;
+        letter-spacing: -1px;
+    }
+    .album{
+        display: none
+    }
+    .table_head,.table_main {
+        grid-template-columns: 45px 470px 300px !important
+    }
+}
+@media (max-width: 993px) {
+    .display_header .text .title {
+        font-size: 40px;
+        font-weight: 1000;
+        letter-spacing: -1px;
+    }
+    .table_head,.table_main {
+        grid-template-columns: 45px 360px 280px !important
+    }
+}
+.table_head,.table_main {
+    font-size: 13px;
+    letter-spacing: 0.5px;
+    margin-left: 35px;
+    display: grid;
+    grid-template-columns: 45px 390px 300px 335px
+}
+.table_main{
+    color: rgb(214,211,211);
+}
+hr {
+    margin-left: 25px;
+    margin-right: 25px;
+    border: none;
+    background-color: rgba(171, 171, 171, 0.222);
+    height: 1px;
+    margin-top: 3px;
+    margin-bottom: 25px;
+}
+.id {
+    font-size: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.title {
+    margin-right: 20px;
+    display: flex;
+    align-items: center;
+}
+.album {
+    white-space: nowrap ;
+    overflow: hidden ;
+    text-overflow: ellipsis ;
+}
+.title .image {
+    width: 40px;
+    height: 40px;
+    padding-left: 3px;
+}
+.text {
+    margin: -10px 0px;
+    padding-left: 18px;
+    display: grid;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.title .text .one {
+    font-size: 15px;
+    color: white;
+}
+.title .text .two {
+    margin-top: -12px;
+    font-size: 13px;
+}
+.head_time {
+    text-align: right;
+    padding-right: 42px ;
+}
+.time {
+    padding-top: 10px;
+    padding-left: 120px;
+    padding-right: 38px ;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.playlist {
+    padding-bottom: 30px;
+}
+.table_head {
+    padding: 5px 0px;
+    border-radius: 5px;
+    color: rgb(151, 149, 149);
+}
+.table_head:hover {
+    background-color: rgb(53, 52, 52);
+    color: white;
+    cursor: pointer;
+}
+.text{
+    color: rgb(151, 149, 149);
+}
+.text:hover, .album .text:hover{
+    color: white;
+}

@@ -1,0 +1,55 @@
+.sidebar{
+    min-width: 235px;
+    height: 100vh;
+    background-color: black;
+    color: white;
+    position: fixed;
+}
+.sidebar_logo{
+    height: 63px;
+    padding: 13px 14px 1px 14px;
+
+}
+.sidebar_icons{
+    display: flex;
+    align-items: center;
+    padding-top: 10px;
+    color: rgb(171, 171, 171);
+    margin-bottom: -10px;
+    transition: color 300ms ease-in;
+}
+.sidebar_icons:hover{
+    color: white;
+    cursor: pointer;
+}
+.sidebar_icons .MuiSvgIcon-root{
+    height: 40px;
+    padding-right: 10px;
+    padding-left: 22px;
+    font-size: 30px;
+}
+.sidebar_icons p{
+    font-size: 13px;
+    font-weight: 600;
+    padding-left: 2px;
+}
+.sidebar_center{
+    padding-top: 25px;
+}
+.sidebar hr{
+    border: none;
+    background-color: rgba(171, 171, 171, 0.222);;
+    height: 1px;
+    margin-top: 17px;
+    width: 80%;
+}
+.sidebar_bottom{
+    padding-left: 30px;
+    color: rgb(171, 171, 171);
+    font-size: 15px;
+    font-weight: 570;
+}
+.sidebar_bottom p:hover{
+    cursor: pointer;
+    color: white;
+}

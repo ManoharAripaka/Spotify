@@ -1,0 +1,76 @@
+.recents_header {
+    display: flex;
+    height: 340px;
+    background-color: blue;
+}
+.recents_header .image {
+    align-self: flex-end;
+    justify-content: left;
+    width: 233px;
+    height: 230px;
+    padding-bottom: 22px;
+    padding-left: 30px;
+    object-fit: cover;
+}
+.recents_header .text {
+    display: flex;
+    flex-direction: column;
+    color: white;
+    align-self: flex-end;
+    padding-left: 25px;
+}
+.recents_header .text .list{
+    font-size: 11px;
+    font-weight: 1000;
+}
+.recents_header .text .title{
+    font-size: 100px;
+    font-weight: bolder;
+    letter-spacing: -6px;
+    margin-bottom: -10px;
+    margin-top: -10px;
+}
+.bottom{
+    display: flex;
+    align-items: center;
+    padding-bottom: 12px;
+}
+.bottom img{
+    height: 25px;
+    width: 25px;
+    border-radius: 50px;
+    object-fit: cover;
+}
+.bottom .one{
+    font-size: 14px;
+    font-weight: 900;
+    padding-left: 5px;
+    letter-spacing: 0px;
+}
+.bottom .two{
+    padding-left: 18px;
+    font-size: 13px;
+    font-weight: 600;
+}
+ul{
+    list-style: none;
+}
+ul li::before{
+    content: "\2022";
+    color: white;
+    display: inline-block;
+    width: 0.7em;
+    margin-left: -1em;
+    font-size: 13px;
+}
+.play{
+    font-size: 67px !important;
+    margin-left: 25px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    color: #0dc74e;
+}
+.play:hover{
+    transition: 100ms transform ease-in;
+    transform: scale(1.07);
+}
